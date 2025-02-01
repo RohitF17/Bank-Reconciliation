@@ -9,7 +9,7 @@ Example configs/reconciliation.yaml
 
 yaml
 Copy
-'''
+```
 input:
   bucket: "your-input-s3-bucket"
   path: "input/reconciliation_files/"  # Path to input CSV files in S3
@@ -23,7 +23,7 @@ spark:
   master: "local[*]"  # Spark master URL
   log_level: "INFO"   # Logging level for Spark
 
-'''
+```
 
 ## Key Configuration Parameters 🔑
 
@@ -54,7 +54,7 @@ AWS CLI: For interacting with AWS S3.
 Git: For cloning and managing the repository.
 
 ## Setup 🛠️
-'''
+```
 1. Clone the Repository
 Clone this repository to your local machine:
 
@@ -105,7 +105,7 @@ Copy
 
 3. Output
 The processed reconciliation results will be saved back to the S3 bucket in the output/ directory.
-
+```
 ## Project Structure 📂
 
 ```
@@ -128,12 +128,12 @@ your-repo-name/
 The .env file contains the following variables:
 
 Variable	Description
-
+```
 AWS_ACCESS_KEY_ID	Your AWS access key ID
 AWS_SECRET_ACCESS_KEY	Your AWS secret access key
 AWS_REGION	AWS region where the S3 bucket is located
 S3_BUCKET	Name of the S3 bucket for input/output files
-
+```
 ## How It Works 🛠️
 
 Input: The script reads CSV files from the specified S3 bucket.
@@ -145,14 +145,14 @@ Output: The results are saved back to the S3 bucket in the output/ directory.
 ## Dependencies 🛠️ 
 
 Python Libraries:
-
+```
 boto3: For interacting with AWS S3.
 
 pyspark: For distributed data processing.
 
 Spark: For large-scale data processing.
 
-
+```
 ## Troubleshooting 🛠️ 
 
 AWS Credentials Error: Ensure the .env file is correctly configured with valid AWS credentials.
