@@ -1,11 +1,11 @@
-🏙️ Reconciliation Project 🚀
+## Reconciliation Project 🚀
 This project automates financial reconciliations by processing input CSV files stored in an AWS S3 bucket. The script is written in Python and leverages Apache Spark 3.0 for distributed data processing. The reconciliation process is triggered by running a shell script, and the results are saved back to S3.
 
-🛠️ Configuration
+🛠️ ##Configuration
 The reconciliation process is configured using a reconciliation.yaml file located in the configs/ directory. This file specifies the input and output paths for CSV files, as well as other settings.
 
 
-📂 Example configs/reconciliation.yaml
+Example configs/reconciliation.yaml
 
 yaml
 Copy
@@ -23,7 +23,7 @@ spark:
   log_level: "INFO"   # Logging level for Spark
 
 
-🔑 Key Configuration Parameters
+🔑 ## Key Configuration Parameters
 
 Section	Parameter	Description
 
@@ -40,8 +40,7 @@ master	Spark master URL (e.g., local[*] for local mode).
 
 log_level	Logging level for Spark (e.g., INFO, DEBUG).
 
-🚀 Prerequisites
-
+##🚀 Prerequisites
 Before running the project, ensure you have the following installed:
 
 Python 3.8+: Required for running the reconciliation script.
@@ -105,7 +104,7 @@ The processed reconciliation results will be saved back to the S3 bucket in the 
 
 📂 Project Structure
 
-
+```
 Copy
 your-repo-name/
 ├── configs/
@@ -119,6 +118,7 @@ your-repo-name/
 ├── README.md                 # Project documentation
 └── sample.env                # Sample environment file
 
+```
 🌐 Environment Variables
 
 The .env file contains the following variables:
