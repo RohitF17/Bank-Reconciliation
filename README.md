@@ -28,7 +28,7 @@ spark:
 ## Key Configuration Parameters 🔑
 
 Section	Parameter	Description
-
+```
 Input	bucket	The S3 bucket where input CSV files are stored.
 path	The folder path within the S3 bucket containing the input CSV files.
 
@@ -52,7 +52,7 @@ Apache Spark 3.0: Ensure Spark is installed and properly configured.
 AWS CLI: For interacting with AWS S3.
 
 Git: For cloning and managing the repository.
-
+```
 ## Setup 🛠️
 ```
 1. Clone the Repository
