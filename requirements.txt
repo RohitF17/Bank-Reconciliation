@@ -1,0 +1,12 @@
+pyspark
+python-dotenv
+boto3          
+botocore        
+jmespath       
+pip             
+py4j            
+python-dateutil
+PyYAML          
+s3transfer     
+six            
+urllib3         

@@ -1,0 +1,13 @@
+s3:
+  bucket: "recon-upload-1"
+  bank_prefix: "bank_statements/date_input="
+  db_prefix: "db_statements/date_input="
+  output_path: "reconciliation-reports/"
+
+app:
+  tmp_dir: "tmp/"
+  common_id: "Reference ID"
+  amount_tolerance: 0.01
+  status_mapping:
+    bank_success: ["COMPLETED", "SUCCESS"]
+    db_success: ["PROCESSED", "ACCEPTED"]
